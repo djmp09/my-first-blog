@@ -1,15 +1,27 @@
+{% load staticfiles %}
 <html>
-    <head blog/templates/blog/post_list.html:>
-        <title>Django Girls blog</title>
+    <head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <title>Daniel's blog</title>
     </head>
     <body>
-        <div>
-            <h1><a href="">Daniel's Blog</a></h1>
+        <div class = "page-header">
+            <h1><a href="/">Daniel's Blog</a></h1>
         </div>
-    		<div>
-        		<p>published: {{ post.published_date }}</p>
-        		<h1><a href="">{{ post.title }}</a></h1>
-        		<p>{{ post.text|linebreaks }}</p>
-    		</div>
+    		<div class="content container">
+    <div class="row">
+        <div class="col-md-8">
+                <div class="post">
+                    <h1><a href="/">Sorry na poo</a></h1>
+                    <p>Liiiil Siiiis</p>
+                    <p>Pleeeaaasssseeeee v(^_^)v</p>
+                    <img src="https://scontent-hkg3-1.xx.fbcdn.net/hphotos-xal1/v/t1.0-9/10436185_940841922596977_8696551714165621670_n.jpg?oh=42628a166e2878fe84ab70b2a234970a&oe=57BC05A0" alt = "Lil Sis" style="width:500px;height:500px;border:0;">
+                </div>
+        </div>
+    </div>
+</div>
     </body>
 </html>
